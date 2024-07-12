@@ -1,24 +1,28 @@
-# conectar-xampp
-repositorio para poder hacer que xampp se conecte remotamente
-# Como configurar para acceder a xampp remotamente
+# Conectar XAMPP Remotamente
 
-Esto es un simple proceso
-## Pasos para crear la página
+Repositorio para configurar XAMPP para acceso remoto.
 
-### 1. Configurar la red de la pc
+## Cómo Configurar XAMPP para Acceso Remoto
 
-+  Desde tu buscador de windows busca: Firewall de Windows Defender e ingresa
-+  Busca la parte de configuracion avanzada
-+  Busca :"Reglas de entrada"
-+  Crea una nueva regla
-++ tipo de regla:Puerto
-++ Se aplica esta regla UTC TCP...: TCP
-++ SE APLICA ESTA REGLA A TODOS...: Puertos locales especificos 80
-++ permitir la conexion
-++ siguiente paso
-  +agregarle el nombre al gusto
-### 2. Configurar xampp
-+ ingresa a la carpeta de xampp
-+ direccion de las carpetas:xammpp>apache>conf>extra
-+ abre el archivo:httpd-xampp.conf
-+ copia el contenido del archivo http_conf de este repositorio
+Sigue estos simples pasos para permitir el acceso remoto a tu instalación de XAMPP.
+
+### Pasos para Configurar la Página
+
+### 1. Configurar la Red de la PC
+
+1. Abre el "Firewall de Windows Defender" desde el buscador de Windows.
+2. Ve a "Configuración avanzada".
+3. Selecciona "Reglas de entrada".
+4. Crea una nueva regla:
+   - Tipo de regla: **Puerto**
+   - Aplicar esta regla a: **TCP**
+   - Puertos locales específicos: **80**
+   - Permitir la conexión
+   - Asigna un nombre a la regla según tu preferencia
+
+### 2. Configurar XAMPP
+
+1. Navega a la carpeta de XAMPP:
+   - `xampp/apache/conf/extra`
+2. Abre el archivo `httpd-xampp.conf`.
+3. Copia el contenido del archivo `http_conf` de este repositorio y pégalo en `httpd-xampp.conf`.
